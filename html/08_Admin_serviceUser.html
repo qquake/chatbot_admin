@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Service User</title>
+    <!-- CSS  (library) -->
+    <!-- <link rel="stylesheet" type="text/css" href="../library/bootstrap/css/bootstrap.min.css" /> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/BX_style.css" />
+</head>
+
+<body>
+    <!-- pageTitle loading start -->
+    <article class="widget">
+        <div class="widget-title">
+            <h2>Service User</h2>
+        </div>
+    </article>
+    <!-- // pageTitle loading end -->
+
+    <!-- search start -->
+    <article class="widget">
+        <!-- <div class="widget-subTitle">
+            <h4>Search</h4>
+        </div> -->
+        <div class="widget-content">
+            <div class="search">
+                <div class="search-content">
+                    <form name="searchForm" action="" method="post">
+                        <fieldset>
+                            <legend>Search Area</legend>
+                            <div class="row">
+                                <label class="col-xs-2">Type</label>
+                                <div class="col-xs-1">
+                                    <select class="form-control">
+                                        <option>All</option>
+                                        <option>option01</option>
+                                        <option>option02</option>
+                                        <option>option03</option>
+                                    </select>
+                                </div>
+                                <label class="col-xs-1">ID</label>
+                                <div class="col-xs-2">
+                                    <div class="input-search">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <label class="col-xs-1">Name</label>
+                                <div class="col-xs-2">
+                                    <div class="input-search">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <span class="searchBtn"><button type="button" id="btnSearch" class="icon-search btn-default">Search</button></span>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- // search end -->
+
+    <!-- default list table start -->
+    <article class="widget">
+        <div class="widget-content listTable">
+            <table class="table" summary="">
+                <caption></caption>
+                <colgroup>
+                    <col width="5%" />
+                    <col width="15%" />
+                    <col width="20%" />
+                    <col width="45%" />
+                    <col width="15%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <label class="checkbox-inline">
+                                <input type="checkbox">
+                                <ins class="form-control"></ins>
+                            </label>
+                        </th>
+                        <th scope="col">Type</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Update date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-toggle="modal" data-target="#newModal">
+                        <td>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">
+                                <ins class="form-control"></ins>
+                            </label>
+                        </td>
+                        <td class="txt-left">Black List</td>
+                        <td class="txt-left">Aaaaaaaaaaa</td>
+                        <td class="txt-left">김철수</td>
+                        <td>2019/00/00</td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#newModal">
+                        <td>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">
+                                <ins class="form-control"></ins>
+                            </label>
+                        </td>
+                        <td class="txt-left">Black List</td>
+                        <td class="txt-left">Aaaaaaaaaaa</td>
+                        <td class="txt-left">김철수</td>
+                        <td>2019/00/00</td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#newModal">
+                        <td>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">
+                                <ins class="form-control"></ins>
+                            </label>
+                        </td>
+                        <td class="txt-left">Black List</td>
+                        <td class="txt-left">Aaaaaaaaaaa</td>
+                        <td class="txt-left">김철수</td>
+                        <td>2019/00/00</td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#newModal">
+                        <td>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">
+                                <ins class="form-control"></ins>
+                            </label>
+                        </td>
+                        <td class="txt-left">Black List</td>
+                        <td class="txt-left">Aaaaaaaaaaa</td>
+                        <td class="txt-left">김철수</td>
+                        <td>2019/00/00</td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#newModal">
+                        <td></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#newModal">
+                        <td></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#newModal">
+                        <td></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#newModal">
+                        <td></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td></td>
+                    </tr>
+                    <tr data-toggle="modal" data-target="#newModal">
+                        <td></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td class="txt-left"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+    <!-- // default list table end -->
+
+    <!-- footer button -->
+    <div class="content-footer">
+        <div class="pull-right">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-xl btn-fx" data-toggle="modal" data-target="#newModal"><span>New</span></button>
+                <button type="button" class="btn btn-default btn-xl"><span>Delete</span></button>
+            </div>
+        </div>
+    </div>
+    <!-- // footer button -->
+
+    <!-- modal confirm start -->
+    <div class="modal fade" id="newModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>x</span></button>
+                    <h1 class="modal-title" id="pageInfoModalLabel">New Service User</h4>
+                </div>
+                <div class="modal-body">
+                    <article class="widget">
+                        <div class="widget-content detailTable">
+                            <table class="table" summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col width="25%" />
+                                    <col width="75%" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="d_chk01">Type</label>
+                                        </th>
+                                        <td>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" name="d_chk" id="d_chk01">
+                                                <ins class="form-control"></ins>
+                                                <span>Black List</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="d_txt01">ID</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="d_txt01" class="form-control" value="" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="d_txt02">Name</label>
+                                        </th>
+                                        <td>
+                                            <input type="text" id="d_txt02" class="form-control" value="" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+                <div class="modal-footer">
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-xl btn-fx" data-dismiss="modal">Save</button>
+                            <button type="button" class="btn btn-default btn-xl btn-fx" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // modal confirm end -->
+
+    <!-- javascript (library) -->
+    <script type="text/javascript" src="../library/jquery/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../library/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../js/BX_js_common.js"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../library/html5shiv-master/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../library/html5shiv-master/dist/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+    <!-- custom javascript -->
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

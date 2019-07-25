@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User-specific Summary</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/BX_style.css" />
+
+    <style>
+        #chatbotLogFrameWrapper {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #cbcbcb;
+            padding-right: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pageTitle loading start -->
+    <article class="widget">
+        <div class="widget-title">
+            <h2>User-specific Summary</h2>
+        </div>
+    </article>
+    <!-- // pageTitle loading end -->
+
+    <!-- search start -->
+    <article class="widget">
+        <!-- <div class="widget-subTitle">
+            <h4>Search</h4>
+        </div> -->
+        <div class="widget-content">
+            <div class="search">
+                <div class="search-content">
+                    <form name="searchForm" action="" method="post">
+                        <fieldset>
+                            <legend>Search Area</legend>
+                            <div class="row">
+                                <label class="col-xs-2">ID</label>
+                                <div class="col-xs-10">
+                                    <div class="input-search col-xs-4">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-xs-2">Datepicker</label>
+                                <div class="col-xs-10">
+                                    <div class="inline-data">
+                                        <div id="startDate1" class="input-group date col-xs-2" data-date-format="yyyy.mm.dd">
+                                            <input type="text" class="form-control" readonly="readonly">
+                                            <span class="input-group-addon">
+                                                <button type="button" class="btn btn-default"><span>Datepicker</span></button>
+                                            </span>
+                                        </div>
+                                        <span class="calendar-tilda">~</span>
+                                        <div id="endDate1" class="input-group date col-xs-2" data-date-format="yyyy.mm.dd">
+                                            <input type="text" class="form-control" readonly="readonly">
+                                            <span class="input-group-addon">
+                                                <button type="button" class="btn btn-default"><span>Datepicker</span></button>
+                                            </span>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 1주</span></button>
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 2주</span></button>
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 1달</span></button>
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 2달</span></button>
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 3달</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="searchBtn"><button type="button" id="btnSearch" class="icon-search btn-default">Search</button></span>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+    </article>
+    <!-- // search end -->
+
+    <article class="widget row-flexible">
+        <article class="widgetWrapper">
+            <!-- default list table start -->
+            <article class="widget col-xs-8">
+                <div class="widget-content listTable">
+                    <table class="table" summary="">
+                        <caption></caption>
+                        <colgroup>
+                            <col width="80%" />
+                            <col width="20%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">발화</th>
+                                <th scope="col">빈도</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="txt-left">배송현황</td>
+                                <td>109</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-left">카드결제</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-left">고객센터</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-left"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="txt-left"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="txt-left"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="txt-left"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="txt-left"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="txt-left"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="txt-left"></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <!-- // default list table end -->
+
+            <!-- chatbot screen -->
+            <article class="widget col-xs-4 row-flexible">
+                <div class="widget-header">
+                    <h2>대화 로그</h2>
+                </div>
+                <div class="widget-content">
+                    <iframe id="chatbotLogFrameWrapper" name="chatbotWrapper" src="../template/html/00_template.html" frameborder="0" style="display: block; width: 100%;"></iframe>
+                </div>
+            </article>
+            <!-- // chatbot screen -->
+        </article>
+    </article>
+
+    <!-- javascript (library) -->
+    <script type=" text/javascript " src="../library/jquery/js/jquery-1.11.2.min.js "></script>
+    <script type="text/javascript " src="../library/datepicker/js/bootstrap-datepicker.min_customized.js "></script>
+
+    <!-- javascript -->
+    <script type="text/javascript " src="../js/BX_js_common.js "></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript " src="../library/html5shiv-master/dist/html5shiv.min.js "></script>
+    <script type="text/javascript " src="../library/html5shiv-master/dist/html5shiv-printshiv.min.js "></script>
+    <![endif]-->
+
+    <!-- custom javascript -->
+    <script type="text/javascript ">
+        $(window).load(function() {
+            // Datepicker load
+            $('#startDate1').datepicker({
+                orientation: 'top auto',
+                autoclose: true
+            });
+            $('#endDate1').datepicker({
+                orientation: 'top auto',
+                autoclose: true
+            });
+        });
+    </script>
+</body>
+
+</html>

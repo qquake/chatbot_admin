@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intent Summary</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/BX_style.css" />
+</head>
+
+<body>
+    <!-- pageTitle loading start -->
+    <article class="widget">
+        <div class="widget-title">
+            <h2>Intent Summary</h2>
+        </div>
+    </article>
+    <!-- // pageTitle loading end -->
+
+    <!-- search start -->
+    <article class="widget">
+        <!-- <div class="widget-subTitle">
+            <h4>Search</h4>
+        </div> -->
+        <div class="widget-content">
+            <div class="search">
+                <div class="search-content">
+                    <form name="searchForm" action="" method="post">
+                        <fieldset>
+                            <legend>Search Area</legend>
+                            <div class="row">
+                                <label class="col-xs-2">Datepicker</label>
+                                <div class="col-xs-10">
+                                    <div class="inline-data">
+                                        <div id="startDate1" class="input-group date col-xs-2" data-date-format="yyyy.mm.dd">
+                                            <input type="text" class="form-control" readonly="readonly">
+                                            <span class="input-group-addon">
+                                                <button type="button" class="btn btn-default"><span>Datepicker</span></button>
+                                            </span>
+                                        </div>
+                                        <span class="calendar-tilda">~</span>
+                                        <div id="endDate1" class="input-group date col-xs-2" data-date-format="yyyy.mm.dd">
+                                            <input type="text" class="form-control" readonly="readonly">
+                                            <span class="input-group-addon">
+                                                <button type="button" class="btn btn-default"><span>Datepicker</span></button>
+                                            </span>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 1주</span></button>
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 2주</span></button>
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 1달</span></button>
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 2달</span></button>
+                                            <button type="button" class="btn btn-grey btn-sm"><span>최근 3달</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="searchBtn"><button type="button" id="btnSearch" class="icon-search btn-default">Search</button></span>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- // search end -->
+
+    <!-- default list table start -->
+    <article class="widget">
+        <!-- <div class="widget-header">
+            <h2>List Table</h2>
+            <div class="page-view">
+                <span>Total 1,024</span>
+                <select id="" class="form-control">
+                        <option>5</option>
+                        <option>10</option>
+                        <option>20</option>
+                    </select>
+                <span>lines / Page</span>
+            </div>
+        </div> -->
+        <div class="widget-content listTable">
+            <table class="table" summary="">
+                <caption></caption>
+                <colgroup>
+                    <col width="60%" />
+                    <col width="20%" />
+                    <col width="20%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">인텐트</th>
+                        <th scope="col">횟수</th>
+                        <th scope="col">비율</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-highlight">
+                        <td class="txt-left">Total</td>
+                        <td>210</td>
+                        <td>100.0%</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left">Welcome Intent</td>
+                        <td>109</td>
+                        <td>21.04%</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left">회원활동문의</td>
+                        <td>13</td>
+                        <td>2.5%</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left">회원등급문의</td>
+                        <td>7</td>
+                        <td>1.2%</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left">비즈니스프로그램문의</td>
+                        <td>6</td>
+                        <td>1.1%</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="txt-left"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <div class="paginate">
+                <div class="paginateWrapper">
+                    <a class="paginate_button first">First</a>
+                    <a class="paginate_button previous">Previous</a>
+                    <span>
+                            <a class="paginate_button ">1</a>
+                            <a class="paginate_button ">2</a>
+                            <a class="paginate_button current">3</a>
+                        </span>
+                    <a class="paginate_button next disabled">Next</a>
+                    <a class="paginate_button last disabled">Last</a>
+                </div>
+            </div> -->
+        </div>
+    </article>
+    <!-- // default list table end -->
+
+    <!-- javascript (library) -->
+    <script type="text/javascript" src="../library/jquery/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../library/datepicker/js/bootstrap-datepicker.min_customized.js"></script>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../js/BX_js_common.js"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../library/html5shiv-master/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../library/html5shiv-master/dist/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+    <!-- custom javascript -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            // Datepicker load
+            $('#startDate1').datepicker({
+                orientation: 'top auto',
+                autoclose: true
+            });
+            $('#endDate1').datepicker({
+                orientation: 'top auto',
+                autoclose: true
+            });
+        });
+    </script>
+</body>
+
+</html>

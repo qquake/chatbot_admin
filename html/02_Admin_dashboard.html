@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/BX_style.css" />
+</head>
+
+<body>
+    <article class="widget">
+        <div class="widget-title">
+            <h2>Dashboard</h2>
+        </div>
+    </article>
+    <article class="widget card-wrapper">
+        <div class="card">
+            <div class="widget-subTitle">
+                <h4>사용자 통계</h4>
+                <p>서비스를 사용하는 사용자 추이</p>
+            </div>
+            <div class="widget-content">
+                <div class="widgetWrapper">
+                    <div class="widget col-xs-4">
+                        <div class="widget-content detailTable">
+                            <table class="table" summary="">
+                                <caption></caption>
+                                <colgroup>
+                                    <col width="50%" />
+                                    <col width="50%" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="txt-center">누적사용자</th>
+                                        <td class="txt-center">2,312</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="txt-center">재방문사용자</th>
+                                        <td class="txt-center">1,205</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="txt-center">신규사용자</th>
+                                        <td class="txt-center">1,511</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="widget col-xs-8">
+                        <img src="../images/chart_sample.png" alt="chart sample">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="widget">
+        <div class="widgetWrapper">
+            <div class="widget card-wrapper col-xs-6">
+                <div class="card">
+                    <div class="widget-subTitle">
+                        <h4>가장 많이 호출된 인텐트</h4>
+                        <p>제공되는 기능 중 사용자들이 제일 많이 묻는 질문</p>
+                    </div>
+                    <div class="widget-content listTable">
+                        <table class="table" summary="">
+                            <caption></caption>
+                            <colgroup>
+                                <col width="60%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">인텐트</th>
+                                    <th scope="col">횟수</th>
+                                    <th scope="col">비율</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tr-highlight">
+                                    <td class="txt-left">Total</td>
+                                    <td>210</td>
+                                    <td>100.0%</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">Welcome Intent</td>
+                                    <td>109</td>
+                                    <td>21.04%</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">회원활동문의</td>
+                                    <td>13</td>
+                                    <td>2.5%</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">회원등급문의</td>
+                                    <td>7</td>
+                                    <td>1.2%</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">비즈니스프로그램문의</td>
+                                    <td>6</td>
+                                    <td>1.1%</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="widget card-wrapper col-xs-6">
+                <div class="card">
+                    <div class="widget-subTitle">
+                        <h4>가장 많이 이해하지 못한 발화문 (디폴트 폴백)</h4>
+                        <p>이해하지 못한 질문들로 학습이 필요한 질문들</p>
+                    </div>
+                    <div class="widget-content listTable">
+                        <table class="table" summary="">
+                            <caption></caption>
+                            <colgroup>
+                                <col width="80%" />
+                                <col width="20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">발화</th>
+                                    <th scope="col">빈도</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt-left">배송현황</td>
+                                    <td>109</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">카드결제</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left">고객센터</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-left"></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- javascript (library) -->
+    <script type="text/javascript" src="../library/jquery/js/jquery-1.11.2.min.js"></script>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../js/BX_js_common.js"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../library/html5shiv-master/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../library/html5shiv-master/dist/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+</body>
+
+</html>
